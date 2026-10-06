@@ -1,0 +1,36 @@
+loaded cached stacked detector
+stacked turn detector: test AUC 0.8777  (7s)
+loaded cached turn scores
+scored 11756 turns in 0s
+conversations  train 1381  val 460  test 461
+loaded cached window scores
+SPRT tuned on validation: leak 0.8 alarm 1.0 prior_user 0.45 prior_retrieved 0.25  (val AUC 0.8543)
+B1 stateless: any turn over threshold        recall 0.481  FPR 0.045  AUC 0.8671
+B2 mean pooling                              recall 0.485  FPR 0.040  AUC 0.8927
+B3 top-2 pooling                             recall 0.523  FPR 0.045  AUC 0.8669
+B4 reassembly only (concatenate and re-score) recall 0.544  FPR 0.045  AUC 0.8886
+B5 sequential accumulator only (tuned)       recall 0.481  FPR 0.049  AUC 0.8659
+B6 CASA-full                                 recall 0.561  FPR 0.049  AUC 0.8997
+B7 CASA-full, linear meta-classifier         recall 0.570  FPR 0.040  AUC 0.9077
+
+ablations (each row removes one component group; baseline is the gradient-boosted full model, AUC 0.8997)
+  no reassembly/windows            recall 0.532  FPR 0.031  AUC 0.9052  dAUC +0.0054
+  no sequential accumulator        recall 0.557  FPR 0.045  AUC 0.8964  dAUC -0.0033
+  no trajectory                    recall 0.561  FPR 0.054  AUC 0.8945  dAUC -0.0052
+  no provenance                    recall 0.549  FPR 0.036  AUC 0.8951  dAUC -0.0046
+  pooled turn scores only          recall 0.553  FPR 0.058  AUC 0.8843  dAUC -0.0154
+
+operating curve (conversation-level recall at a false-positive budget)
+ budget           B1 stateless           B6 CASA-full    B7 CASA-full linear
+   0.01                 0.245                  0.266                  0.131 
+   0.02                 0.380                  0.338                  0.287 
+   0.05                 0.481                  0.561                  0.570 
+   0.10                 0.667                  0.722                  0.717 
+   0.20                 0.768                  0.852                  0.857 
+  direct               n=250  stateless recall 0.500 AUC 0.8718   CASA recall 0.563 AUC 0.9104
+  rag                  n=211  stateless recall 0.459 AUC 0.8636   CASA recall 0.577 AUC 0.9018
+  1-2 payload turns    n=151  stateless recall 0.513 AUC 0.8764   CASA recall 0.579 AUC 0.8865
+  3-4 payload turns    n=176  stateless recall 0.521 AUC 0.9005   CASA recall 0.649 AUC 0.9398
+  6-8 payload turns    n=134  stateless recall 0.388 AUC 0.8387   CASA recall 0.448 AUC 0.8828
+
+fragmentation ceiling: oracle(unfragmented) AUC 0.9212   stateless 0.8671   CASA 0.9077   recovered 75.1%

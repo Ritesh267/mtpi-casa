@@ -1,0 +1,81 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code or its result files, please cite the report below.
+  The report is an extended research report and has not been peer reviewed.
+title: "MTPI-Bench and CASA: code for a conversation-level defence against multi-turn prompt injection"
+type: software
+authors:
+  - family-names: Mukherjee
+    given-names: Ritesh
+version: "1.0.0"
+license: MIT
+keywords:
+  - prompt injection
+  - multi-turn attacks
+  - large language models
+  - retrieval-augmented generation
+  - adversarial training
+  - LoRA
+  - direct preference optimisation
+abstract: >-
+  Research code for an extended research report on defending locally deployed
+  language models against prompt injection that is spread over several
+  conversational turns or delivered inside retrieved content. It contains the
+  build script for the MTPI-Bench benchmark, a turn-level detector grid, the
+  conversation-level detector CASA, an adaptive attacker with symmetric
+  adversarial training, a LoRA-DPO alignment study, a live
+  retrieval-augmented-generation evaluation, and the result files behind the
+  tables of the report.
+preferred-citation:
+  type: report
+  title: >-
+    Conversation-Level Defence Against Multi-Turn Prompt Injection in Locally
+    Deployed Large Language Models: Sequential Evidence Accumulation,
+    Provenance Separation and Detector-Supervised Preference Alignment
+  authors:
+    - family-names: Mukherjee
+      given-names: Ritesh
+  year: 2026
+  month: 10
+  notes: >-
+    Extended research report. An extension of the author's MSc dissertation;
+    not the dissertation submitted for the degree. Not peer reviewed.
+references:
+  - type: conference-paper
+    title: >-
+      "Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak
+      Prompts on Large Language Models
+    authors:
+      - family-names: Shen
+        given-names: Xinyue
+      - family-names: Chen
+        given-names: Zeyuan
+      - family-names: Backes
+        given-names: Michael
+      - family-names: Shen
+        given-names: Yun
+      - family-names: Zhang
+        given-names: Yang
+    year: 2024
+    collection-title: >-
+      Proceedings of the 2024 ACM SIGSAC Conference on Computer and
+      Communications Security (CCS '24)
+    doi: 10.1145/3658644.3670388
+    notes: Source of the prompts from which MTPI-Bench is built.
+  - type: conference-paper
+    title: "SQuAD: 100,000+ Questions for Machine Comprehension of Text"
+    authors:
+      - family-names: Rajpurkar
+        given-names: Pranav
+      - family-names: Zhang
+        given-names: Jian
+      - family-names: Lopyrev
+        given-names: Konstantin
+      - family-names: Liang
+        given-names: Percy
+    year: 2016
+    collection-title: >-
+      Proceedings of the 2016 Conference on Empirical Methods in Natural
+      Language Processing
+    doi: 10.18653/v1/D16-1264
+    notes: Knowledge base and questions of the live retrieval study.

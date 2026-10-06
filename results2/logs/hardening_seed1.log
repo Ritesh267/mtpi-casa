@@ -1,0 +1,6 @@
+seed 1 AT      dilute   5.9  combined   0.4  clean-fp  5.8  (1373s)
+seed 1 +P      dilute  25.7  combined   1.7  clean-fp  6.7  (3534s)
+seed 1 +C      dilute   5.9  combined   2.1  clean-fp  6.7  (5153s)
+seed 1 CASA-R  dilute  20.7  combined   7.6  clean-fp  5.8  (7640s)
+wrote results2/casa_fix_seed1.json
+DONE

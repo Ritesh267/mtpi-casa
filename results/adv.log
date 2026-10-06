@@ -1,0 +1,28 @@
+building the adversarially augmented training set ...
+  1381 -> 4143 conversations  (2s)
+  featurised in 724s
+  CASA-AT (linear): threshold 0.969  (val AUC clean 0.8930  augmented 0.8251)
+  CASA-AT (gbm): threshold 1.000  (val AUC clean 0.8865  augmented 0.8519)
+
+strategy      kept | stateless |  CASA-base |  CASA-AT lin |  CASA-AT gbm
+none           237 |     0.481 |      0.570 |        0.637 |        0.586
+split          237 |     0.574 |      0.198 |        0.574 |        0.464
+pace           237 |     0.481 |      0.084 |        0.485 |        0.532
+pace-wide      237 |     0.481 |      0.072 |        0.418 |        0.519
+dilute         237 |     0.017 |      0.025 |        0.038 |        0.042
+launder        237 |     0.473 |      0.544 |        0.620 |        0.620
+combined       237 |     0.089 |      0.000 |        0.017 |        0.089
+
+false-positive rate on unmodified benign traffic:
+  stateless          0.045
+  CASA-base          0.040
+  CASA-AT (linear)   0.071
+  CASA-AT (gbm)      0.058
+false-positive rate on benign sessions transformed the same way:
+  strategy             CASA-base   CASA-AT (linear)      CASA-AT (gbm)
+  split                    0.013              0.062              0.045
+  pace                     0.009              0.027              0.054
+  pace-wide                0.004              0.022              0.049
+  dilute                   0.000              0.004              0.000
+  launder                  0.036              0.062              0.058
+  combined                 0.000              0.000              0.013

@@ -1,0 +1,18 @@
+CASA-AT (linear): recalibrated threshold 0.9872
+CASA-AT (gbm): recalibrated threshold 0.9998
+
+strategy      kept | stateless |  CASA-base | CASA-AT (linear) |    CASA-AT (gbm)
+none           237 |     0.481 |      0.570 |            0.549 |            0.540
+split          237 |     0.574 |      0.198 |            0.451 |            0.435
+pace           237 |     0.481 |      0.084 |            0.367 |            0.498
+pace-wide      237 |     0.481 |      0.072 |            0.241 |            0.473
+dilute         237 |     0.017 |      0.025 |            0.008 |            0.030
+launder        237 |     0.473 |      0.544 |            0.511 |            0.586
+combined       237 |     0.089 |      0.000 |            0.004 |            0.084
+
+false-positive rate on unmodified benign traffic (all recalibrated to a 5% budget)
+  stateless            0.045
+  CASA-base            0.040
+  CASA-AT (linear)     0.049
+  CASA-AT (gbm)        0.049
+ALLDONE

@@ -1,0 +1,13 @@
+building the attack-only augmented training set ...
+  1381 -> 4143 conversations; mean turns attack 12.13  benign 5.12
+  featurised in 645s
+  threshold recalibrated on clean benign validation: 0.9999
+
+strategy      detection     FPR on benign transformed the same way
+none              0.624                                      0.076
+split             0.819                                      0.446
+pace              0.781                                      0.339
+pace-wide         0.840                                      0.518
+dilute            0.063                                      0.004
+launder           0.650                                      0.067
+combined          0.857                                      0.781

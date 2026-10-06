@@ -1,0 +1,13 @@
+online thresholds: {'stateless': 0.9551, 'CASA-base': 0.9847, 'CASA-AT (linear)': 0.9946, 'CASA-AT (gbm)': 1.0} (52s)
+none       stateless: off  48.1 on  48.1 [fp  4.5]  CASA-base: off  57.0 on  54.4 [fp  5.4]  CASA-AT (linear): off  54.9 on  41.8 [fp  5.8]  CASA-AT (gbm): off  55.7 on  48.1 [fp  5.8]  (142s)
+split      stateless: off  57.4 on  57.4 [fp 25.4]  CASA-base: off  19.8 on  45.6 [fp  8.9]  CASA-AT (linear): off  45.6 on  53.6 [fp 10.7]  CASA-AT (gbm): off  42.6 on  48.1 [fp  9.8]  (389s)
+pace       stateless: off  48.1 on  48.1 [fp  4.5]  CASA-base: off   8.4 on  25.3 [fp  2.2]  CASA-AT (linear): off  37.1 on  32.1 [fp  4.9]  CASA-AT (gbm): off  48.1 on  45.1 [fp  6.2]  (663s)
+pace-wide  stateless: off  48.1 on  48.1 [fp  4.5]  CASA-base: off   7.2 on  25.3 [fp  2.2]  CASA-AT (linear): off  24.5 on  27.4 [fp  3.6]  CASA-AT (gbm): off  47.3 on  41.8 [fp  5.4]  (1096s)
+dilute     stateless: off   1.7 on   1.7 [fp  0.4]  CASA-base: off   2.5 on   5.1 [fp  1.3]  CASA-AT (linear): off   0.8 on   1.3 [fp  0.9]  CASA-AT (gbm): off   3.0 on   1.7 [fp  0.4]  (1265s)
+launder    stateless: off  47.3 on  47.3 [fp  4.0]  CASA-base: off  54.4 on  51.1 [fp  4.9]  CASA-AT (linear): off  51.5 on  40.5 [fp  5.4]  CASA-AT (gbm): off  59.9 on  52.3 [fp  6.7]  (1328s)
+combined   stateless: off   8.9 on   8.9 [fp  3.6]  CASA-base: off   0.0 on   5.5 [fp  1.3]  CASA-AT (linear): off   0.4 on   4.6 [fp  1.8]  CASA-AT (gbm): off   8.0 on   9.7 [fp  1.3]  (3204s)
+append 1: stateless: off  48.1 on  48.1  CASA-base: off   2.1 on  54.4  CASA-AT (linear): off  24.1 on  42.2  CASA-AT (gbm): off  43.9 on  50.2
+append 3: stateless: off  48.1 on  48.1  CASA-base: off   0.0 on  54.4  CASA-AT (linear): off   2.1 on  41.8  CASA-AT (gbm): off  38.8 on  51.1
+largest difference between the offline column and results/adaptive_final.json: 0.0000
+wrote results3/online_eval.json (3292s)
+DONE

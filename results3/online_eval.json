@@ -1,0 +1,445 @@
+{
+ "budget": 0.05,
+ "thresholds": {
+  "offline": {
+   "stateless": 0.9551486372682263,
+   "CASA-base": 0.9496422410011292,
+   "CASA-AT (linear)": 0.9869189262390137,
+   "CASA-AT (gbm)": 0.9997977963457203
+  },
+  "online": {
+   "stateless": 0.9551486372682263,
+   "CASA-base": 0.9847012758255005,
+   "CASA-AT (linear)": 0.9946336150169373,
+   "CASA-AT (gbm)": 0.9999621320152049
+  }
+ },
+ "attack": {
+  "none": {
+   "kept": 237,
+   "mean_turns": 4.9957805907173,
+   "stateless": {
+    "offline": 0.4810126582278481,
+    "online": 0.4810126582278481,
+    "online_old_thr": 0.4810126582278481
+   },
+   "CASA-base": {
+    "offline": 0.569620253164557,
+    "online": 0.5443037974683544,
+    "online_old_thr": 0.6751054852320675
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.5485232067510548,
+    "online": 0.4177215189873418,
+    "online_old_thr": 0.5949367088607594
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.5569620253164557,
+    "online": 0.4810126582278481,
+    "online_old_thr": 0.6751054852320675
+   }
+  },
+  "split": {
+   "kept": 237,
+   "mean_turns": 15.063291139240507,
+   "stateless": {
+    "offline": 0.5738396624472574,
+    "online": 0.5738396624472574,
+    "online_old_thr": 0.5738396624472574
+   },
+   "CASA-base": {
+    "offline": 0.19831223628691982,
+    "online": 0.45569620253164556,
+    "online_old_thr": 0.6244725738396625
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.45569620253164556,
+    "online": 0.5358649789029536,
+    "online_old_thr": 0.6582278481012658
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.42616033755274263,
+    "online": 0.4810126582278481,
+    "online_old_thr": 0.6624472573839663
+   }
+  },
+  "pace": {
+   "kept": 237,
+   "mean_turns": 10.725738396624472,
+   "stateless": {
+    "offline": 0.4810126582278481,
+    "online": 0.4810126582278481,
+    "online_old_thr": 0.4810126582278481
+   },
+   "CASA-base": {
+    "offline": 0.08438818565400844,
+    "online": 0.25316455696202533,
+    "online_old_thr": 0.4472573839662447
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.37130801687763715,
+    "online": 0.3206751054852321,
+    "online_old_thr": 0.4810126582278481
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.4810126582278481,
+    "online": 0.45147679324894513,
+    "online_old_thr": 0.6033755274261603
+   }
+  },
+  "pace-wide": {
+   "kept": 237,
+   "mean_turns": 16.455696202531644,
+   "stateless": {
+    "offline": 0.4810126582278481,
+    "online": 0.4810126582278481,
+    "online_old_thr": 0.4810126582278481
+   },
+   "CASA-base": {
+    "offline": 0.07172995780590717,
+    "online": 0.25316455696202533,
+    "online_old_thr": 0.4177215189873418
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.24472573839662448,
+    "online": 0.2742616033755274,
+    "online_old_thr": 0.41350210970464135
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.47257383966244726,
+    "online": 0.4177215189873418,
+    "online_old_thr": 0.5822784810126582
+   }
+  },
+  "dilute": {
+   "kept": 237,
+   "mean_turns": 4.9957805907173,
+   "stateless": {
+    "offline": 0.016877637130801686,
+    "online": 0.016877637130801686,
+    "online_old_thr": 0.016877637130801686
+   },
+   "CASA-base": {
+    "offline": 0.02531645569620253,
+    "online": 0.05063291139240506,
+    "online_old_thr": 0.10126582278481013
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.008438818565400843,
+    "online": 0.012658227848101266,
+    "online_old_thr": 0.03375527426160337
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.029535864978902954,
+    "online": 0.016877637130801686,
+    "online_old_thr": 0.10548523206751055
+   }
+  },
+  "launder": {
+   "kept": 237,
+   "mean_turns": 4.9957805907173,
+   "stateless": {
+    "offline": 0.47257383966244726,
+    "online": 0.47257383966244726,
+    "online_old_thr": 0.47257383966244726
+   },
+   "CASA-base": {
+    "offline": 0.5443037974683544,
+    "online": 0.510548523206751,
+    "online_old_thr": 0.6666666666666666
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.5147679324894515,
+    "online": 0.4050632911392405,
+    "online_old_thr": 0.5569620253164557
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.5991561181434599,
+    "online": 0.5232067510548524,
+    "online_old_thr": 0.6624472573839663
+   }
+  },
+  "combined": {
+   "kept": 237,
+   "mean_turns": 40.92827004219409,
+   "stateless": {
+    "offline": 0.08860759493670886,
+    "online": 0.08860759493670886,
+    "online_old_thr": 0.08860759493670886
+   },
+   "CASA-base": {
+    "offline": 0.0,
+    "online": 0.05485232067510549,
+    "online_old_thr": 0.10970464135021098
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.004219409282700422,
+    "online": 0.046413502109704644,
+    "online_old_thr": 0.08016877637130802
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.08016877637130802,
+    "online": 0.0970464135021097,
+    "online_old_thr": 0.22362869198312235
+   }
+  }
+ },
+ "benign": {
+  "none": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.044642857142857144,
+    "online": 0.044642857142857144,
+    "online_old_thr": 0.044642857142857144
+   },
+   "CASA-base": {
+    "offline": 0.04017857142857143,
+    "online": 0.05357142857142857,
+    "online_old_thr": 0.10714285714285714
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.049107142857142856,
+    "online": 0.05803571428571429,
+    "online_old_thr": 0.07589285714285714
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.044642857142857144,
+    "online": 0.05803571428571429,
+    "online_old_thr": 0.11160714285714286
+   }
+  },
+  "split": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.2544642857142857,
+    "online": 0.2544642857142857,
+    "online_old_thr": 0.2544642857142857
+   },
+   "CASA-base": {
+    "offline": 0.008928571428571428,
+    "online": 0.08928571428571429,
+    "online_old_thr": 0.13839285714285715
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.03571428571428571,
+    "online": 0.10714285714285714,
+    "online_old_thr": 0.14732142857142858
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.03571428571428571,
+    "online": 0.09821428571428571,
+    "online_old_thr": 0.16071428571428573
+   }
+  },
+  "pace": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.044642857142857144,
+    "online": 0.044642857142857144,
+    "online_old_thr": 0.044642857142857144
+   },
+   "CASA-base": {
+    "offline": 0.008928571428571428,
+    "online": 0.022321428571428572,
+    "online_old_thr": 0.05803571428571429
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.026785714285714284,
+    "online": 0.049107142857142856,
+    "online_old_thr": 0.06696428571428571
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.04017857142857143,
+    "online": 0.0625,
+    "online_old_thr": 0.10267857142857142
+   }
+  },
+  "pace-wide": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.044642857142857144,
+    "online": 0.044642857142857144,
+    "online_old_thr": 0.044642857142857144
+   },
+   "CASA-base": {
+    "offline": 0.004464285714285714,
+    "online": 0.022321428571428572,
+    "online_old_thr": 0.05357142857142857
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.022321428571428572,
+    "online": 0.03571428571428571,
+    "online_old_thr": 0.06696428571428571
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.04017857142857143,
+    "online": 0.05357142857142857,
+    "online_old_thr": 0.08928571428571429
+   }
+  },
+  "dilute": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.004464285714285714,
+    "online": 0.004464285714285714,
+    "online_old_thr": 0.004464285714285714
+   },
+   "CASA-base": {
+    "offline": 0.008928571428571428,
+    "online": 0.013392857142857142,
+    "online_old_thr": 0.04017857142857143
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.0,
+    "online": 0.008928571428571428,
+    "online_old_thr": 0.013392857142857142
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.004464285714285714,
+    "online": 0.004464285714285714,
+    "online_old_thr": 0.03571428571428571
+   }
+  },
+  "launder": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.04017857142857143,
+    "online": 0.04017857142857143,
+    "online_old_thr": 0.04017857142857143
+   },
+   "CASA-base": {
+    "offline": 0.03571428571428571,
+    "online": 0.049107142857142856,
+    "online_old_thr": 0.09375
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.044642857142857144,
+    "online": 0.05357142857142857,
+    "online_old_thr": 0.06696428571428571
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.044642857142857144,
+    "online": 0.06696428571428571,
+    "online_old_thr": 0.09821428571428571
+   }
+  },
+  "combined": {
+   "n": 224,
+   "stateless": {
+    "offline": 0.03571428571428571,
+    "online": 0.03571428571428571,
+    "online_old_thr": 0.03571428571428571
+   },
+   "CASA-base": {
+    "offline": 0.0,
+    "online": 0.013392857142857142,
+    "online_old_thr": 0.03125
+   },
+   "CASA-AT (linear)": {
+    "offline": 0.0,
+    "online": 0.017857142857142856,
+    "online_old_thr": 0.022321428571428572
+   },
+   "CASA-AT (gbm)": {
+    "offline": 0.004464285714285714,
+    "online": 0.013392857142857142,
+    "online_old_thr": 0.03125
+   }
+  }
+ },
+ "append": {
+  "1": {
+   "attack": {
+    "stateless": {
+     "offline": 0.4810126582278481,
+     "online": 0.4810126582278481,
+     "online_old_thr": 0.4810126582278481
+    },
+    "CASA-base": {
+     "offline": 0.02109704641350211,
+     "online": 0.5443037974683544,
+     "online_old_thr": 0.6751054852320675
+    },
+    "CASA-AT (linear)": {
+     "offline": 0.24050632911392406,
+     "online": 0.4219409282700422,
+     "online_old_thr": 0.5949367088607594
+    },
+    "CASA-AT (gbm)": {
+     "offline": 0.4388185654008439,
+     "online": 0.5021097046413502,
+     "online_old_thr": 0.679324894514768
+    }
+   },
+   "benign": {
+    "stateless": {
+     "offline": 0.044642857142857144,
+     "online": 0.044642857142857144,
+     "online_old_thr": 0.044642857142857144
+    },
+    "CASA-base": {
+     "offline": 0.0,
+     "online": 0.05357142857142857,
+     "online_old_thr": 0.10714285714285714
+    },
+    "CASA-AT (linear)": {
+     "offline": 0.017857142857142856,
+     "online": 0.05803571428571429,
+     "online_old_thr": 0.07589285714285714
+    },
+    "CASA-AT (gbm)": {
+     "offline": 0.03125,
+     "online": 0.05803571428571429,
+     "online_old_thr": 0.11160714285714286
+    }
+   }
+  },
+  "3": {
+   "attack": {
+    "stateless": {
+     "offline": 0.4810126582278481,
+     "online": 0.4810126582278481,
+     "online_old_thr": 0.4810126582278481
+    },
+    "CASA-base": {
+     "offline": 0.0,
+     "online": 0.5443037974683544,
+     "online_old_thr": 0.6751054852320675
+    },
+    "CASA-AT (linear)": {
+     "offline": 0.02109704641350211,
+     "online": 0.4177215189873418,
+     "online_old_thr": 0.5949367088607594
+    },
+    "CASA-AT (gbm)": {
+     "offline": 0.3881856540084388,
+     "online": 0.510548523206751,
+     "online_old_thr": 0.6751054852320675
+    }
+   },
+   "benign": {
+    "stateless": {
+     "offline": 0.044642857142857144,
+     "online": 0.044642857142857144,
+     "online_old_thr": 0.044642857142857144
+    },
+    "CASA-base": {
+     "offline": 0.0,
+     "online": 0.05357142857142857,
+     "online_old_thr": 0.10714285714285714
+    },
+    "CASA-AT (linear)": {
+     "offline": 0.0,
+     "online": 0.05803571428571429,
+     "online_old_thr": 0.07589285714285714
+    },
+    "CASA-AT (gbm)": {
+     "offline": 0.026785714285714284,
+     "online": 0.05803571428571429,
+     "online_old_thr": 0.11160714285714286
+    }
+   }
+  }
+ },
+ "max_abs_deviation_from_adaptive_final": 0.0
+}

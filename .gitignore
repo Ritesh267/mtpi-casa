@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Source corpora and the benchmark built from them. Not redistributed: see data/README.md
+jailbreak_llms/
+data/*
+!data/README.md
+
+# Saved models, adapters and caches. Rebuilt by the scripts: see docs/REPRODUCE.md
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npy
+*.npz
+results/turn_scores.json
+results/window_scores.json
+results/gpu_dpo/
+results2/dpo_pool.json
+results2/dpo_cpu_seeds/
+results3/rag/sessions_*.json
+results3/rag/score_cache_*
+results3/*_smoke.json
+
+# Model cache, if HF_HOME is pointed inside the repository
+hf/
+.cache/
+
+# Editors and operating system
+.DS_Store
+.idea/
+.vscode/
+*.swp

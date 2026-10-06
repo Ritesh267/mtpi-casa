@@ -1,0 +1,49 @@
+{
+  "agreement": 94.42433019551049,
+  "rows": [
+    {
+      "arm": "A0 unhardened (SFT only)",
+      "n_pairs": 0,
+      "refuse_attack": 95.35864978902954,
+      "refuse_benign": 96.875,
+      "gap": -1.516350210970463,
+      "margin_gap": -0.10660864223236022,
+      "pref_acc": null,
+      "trainable_pct": 0.0
+    },
+    {
+      "arm": "A1 externally curated",
+      "n_pairs": 600,
+      "refuse_attack": 69.62025316455697,
+      "refuse_benign": 24.107142857142858,
+      "gap": 45.51311030741411,
+      "margin_gap": 11.103583314689578,
+      "pref_acc": 0.8225,
+      "trainable_pct": 2.3872961739315786
+    },
+    {
+      "arm": "A2 detector-gated",
+      "n_pairs": 600,
+      "refuse_attack": 64.13502109704642,
+      "refuse_benign": 16.517857142857142,
+      "gap": 47.61716395418928,
+      "margin_gap": 49.049132665004194,
+      "pref_acc": 0.9775,
+      "trainable_pct": 2.3872961739315786
+    },
+    {
+      "arm": "A3 detector-generated",
+      "n_pairs": 600,
+      "refuse_attack": 75.10548523206751,
+      "refuse_benign": 30.80357142857143,
+      "gap": 44.301913803496085,
+      "margin_gap": 42.1271434008075,
+      "pref_acc": 0.985,
+      "trainable_pct": 2.3872961739315786
+    }
+  ],
+  "lora": {
+    "r": 8,
+    "alpha": 16
+  }
+}

@@ -1,0 +1,713 @@
+{
+ "retriever": "dense",
+ "k": 5,
+ "budget": 0.05,
+ "thresholds": {
+  "benchmark": {
+   "stateless_prompt": 0.9551486372682263,
+   "stateless_chunk": 0.9551486372682263,
+   "casa_prompt_zs": 0.9496422410011292,
+   "casa_chunk_zs": 0.9496422410011292,
+   "casa_at_chunk_zs": 0.9997977963457203,
+   "casa_prompt_rag": null,
+   "casa_chunk_rag": null,
+   "casa_prompt_ragcv": null,
+   "casa_chunk_ragcv": null
+  },
+  "recalibrated": {
+   "stateless_prompt": 0.8500671267434678,
+   "stateless_chunk": 0.8502229036147434,
+   "casa_prompt_zs": 0.9743200242519379,
+   "casa_chunk_zs": 0.9527191460132578,
+   "casa_at_chunk_zs": 0.9999810032815645,
+   "casa_prompt_rag": 0.9129966378211969,
+   "casa_chunk_rag": 0.9080232977867126,
+   "casa_prompt_ragcv": 0.8300834953784942,
+   "casa_chunk_ragcv": 0.8098277956247313
+  }
+ },
+ "n_train_sessions": 4143,
+ "by_mode": {
+  "targeted": {
+   "stateless_prompt": {
+    "auc": 0.7420320976491862,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.02109704641350211,
+     "fpr_planted_benign": 0.004464285714285714
+    },
+    "recalibrated": {
+     "detection": 0.28270042194092826,
+     "fpr_planted_benign": 0.049107142857142856
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.25316455696202533,
+    "detection_when_fully_delivered": 0.21052631578947367,
+    "by_depth": {
+     "1-2": 0.19736842105263158,
+     "3-4": 0.30851063829787234,
+     "5-8": 0.34328358208955223
+    }
+   },
+   "stateless_chunk": {
+    "auc": 0.8041647830018082,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.21518987341772153,
+     "fpr_planted_benign": 0.013392857142857142
+    },
+    "recalibrated": {
+     "detection": 0.4767932489451477,
+     "fpr_planted_benign": 0.05357142857142857
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.20675105485232068,
+    "detection_when_fully_delivered": 0.35526315789473684,
+    "by_depth": {
+     "1-2": 0.40789473684210525,
+     "3-4": 0.5531914893617021,
+     "5-8": 0.44776119402985076
+    }
+   },
+   "casa_prompt_zs": {
+    "auc": 0.7300708257986738,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.32489451476793246,
+     "fpr_planted_benign": 0.09821428571428571
+    },
+    "recalibrated": {
+     "detection": 0.2320675105485232,
+     "fpr_planted_benign": 0.0625
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.25738396624472576,
+    "detection_when_fully_delivered": 0.19736842105263158,
+    "by_depth": {
+     "1-2": 0.17105263157894737,
+     "3-4": 0.23404255319148937,
+     "5-8": 0.29850746268656714
+    }
+   },
+   "casa_chunk_zs": {
+    "auc": 0.8078473477998794,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.48523206751054854,
+     "fpr_planted_benign": 0.05803571428571429
+    },
+    "recalibrated": {
+     "detection": 0.4810126582278481,
+     "fpr_planted_benign": 0.05803571428571429
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.20253164556962025,
+    "detection_when_fully_delivered": 0.3684210526315789,
+    "by_depth": {
+     "1-2": 0.42105263157894735,
+     "3-4": 0.5319148936170213,
+     "5-8": 0.47761194029850745
+    }
+   },
+   "casa_at_chunk_zs": {
+    "auc": 0.7877863170584689,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.5443037974683544,
+     "fpr_planted_benign": 0.12053571428571429
+    },
+    "recalibrated": {
+     "detection": 0.3755274261603376,
+     "fpr_planted_benign": 0.07142857142857142
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.21940928270042195,
+    "detection_when_fully_delivered": 0.3157894736842105,
+    "by_depth": {
+     "1-2": 0.27631578947368424,
+     "3-4": 0.39361702127659576,
+     "5-8": 0.4626865671641791
+    }
+   },
+   "casa_prompt_rag": {
+    "auc": 0.7615845388788427,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.24472573839662448,
+     "fpr_planted_benign": 0.049107142857142856
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.26582278481012656,
+    "detection_when_fully_delivered": 0.17105263157894737,
+    "by_depth": {
+     "1-2": 0.19736842105263158,
+     "3-4": 0.26595744680851063,
+     "5-8": 0.26865671641791045
+    }
+   },
+   "casa_chunk_rag": {
+    "auc": 0.8156174653405667,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.4978902953586498,
+     "fpr_planted_benign": 0.04017857142857143
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.189873417721519,
+    "detection_when_fully_delivered": 0.40789473684210525,
+    "by_depth": {
+     "1-2": 0.3684210526315789,
+     "3-4": 0.5851063829787234,
+     "5-8": 0.5223880597014925
+    }
+   },
+   "casa_prompt_ragcv": {
+    "auc": 0.7476830922242315,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.25738396624472576,
+     "fpr_planted_benign": 0.044642857142857144
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.26582278481012656,
+    "detection_when_fully_delivered": 0.17105263157894737,
+    "by_depth": {
+     "1-2": 0.15789473684210525,
+     "3-4": 0.2872340425531915,
+     "5-8": 0.3283582089552239
+    }
+   },
+   "casa_chunk_ragcv": {
+    "auc": 0.8059448462929475,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.48523206751054854,
+     "fpr_planted_benign": 0.05803571428571429
+    },
+    "full_delivery": 0.3206751054852321,
+    "dsr_under_defence": 0.1940928270042194,
+    "detection_when_fully_delivered": 0.39473684210526316,
+    "by_depth": {
+     "1-2": 0.3815789473684211,
+     "3-4": 0.5319148936170213,
+     "5-8": 0.5373134328358209
+    }
+   }
+  },
+  "chunkaware": {
+   "stateless_prompt": {
+    "auc": 0.788878842676311,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.15611814345991562,
+     "fpr_planted_benign": 0.026785714285714284
+    },
+    "recalibrated": {
+     "detection": 0.41350210970464135,
+     "fpr_planted_benign": 0.07589285714285714
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.32489451476793246,
+    "detection_when_fully_delivered": 0.33620689655172414,
+    "by_depth": {
+     "1-2": 0.4473684210526316,
+     "3-4": 0.40425531914893614,
+     "5-8": 0.3880597014925373
+    }
+   },
+   "stateless_chunk": {
+    "auc": 0.8284734779987943,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.28270042194092826,
+     "fpr_planted_benign": 0.022321428571428572
+    },
+    "recalibrated": {
+     "detection": 0.5189873417721519,
+     "fpr_planted_benign": 0.0625
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.2742616033755274,
+    "detection_when_fully_delivered": 0.4396551724137931,
+    "by_depth": {
+     "1-2": 0.5263157894736842,
+     "3-4": 0.5531914893617021,
+     "5-8": 0.4626865671641791
+    }
+   },
+   "casa_prompt_zs": {
+    "auc": 0.7744122965641953,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.4345991561181435,
+     "fpr_planted_benign": 0.11607142857142858
+    },
+    "recalibrated": {
+     "detection": 0.35864978902953587,
+     "fpr_planted_benign": 0.07142857142857142
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.34177215189873417,
+    "detection_when_fully_delivered": 0.3017241379310345,
+    "by_depth": {
+     "1-2": 0.40789473684210525,
+     "3-4": 0.3191489361702128,
+     "5-8": 0.3582089552238806
+    }
+   },
+   "casa_chunk_zs": {
+    "auc": 0.8297920433996383,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.5358649789029536,
+     "fpr_planted_benign": 0.07142857142857142
+    },
+    "recalibrated": {
+     "detection": 0.5232067510548524,
+     "fpr_planted_benign": 0.07142857142857142
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.270042194092827,
+    "detection_when_fully_delivered": 0.4482758620689655,
+    "by_depth": {
+     "1-2": 0.47368421052631576,
+     "3-4": 0.5851063829787234,
+     "5-8": 0.4925373134328358
+    }
+   },
+   "casa_at_chunk_zs": {
+    "auc": 0.807423523206751,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.6075949367088608,
+     "fpr_planted_benign": 0.12946428571428573
+    },
+    "recalibrated": {
+     "detection": 0.4388185654008439,
+     "fpr_planted_benign": 0.08928571428571429
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.29535864978902954,
+    "detection_when_fully_delivered": 0.39655172413793105,
+    "by_depth": {
+     "1-2": 0.3815789473684211,
+     "3-4": 0.43617021276595747,
+     "5-8": 0.5074626865671642
+    }
+   },
+   "casa_prompt_rag": {
+    "auc": 0.7960744424352019,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.3459915611814346,
+     "fpr_planted_benign": 0.07589285714285714
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.35443037974683544,
+    "detection_when_fully_delivered": 0.27586206896551724,
+    "by_depth": {
+     "1-2": 0.35526315789473684,
+     "3-4": 0.3829787234042553,
+     "5-8": 0.2835820895522388
+    }
+   },
+   "casa_chunk_rag": {
+    "auc": 0.8381084237492464,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.5443037974683544,
+     "fpr_planted_benign": 0.05803571428571429
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.25316455696202533,
+    "detection_when_fully_delivered": 0.4827586206896552,
+    "by_depth": {
+     "1-2": 0.47368421052631576,
+     "3-4": 0.6063829787234043,
+     "5-8": 0.5373134328358209
+    }
+   },
+   "casa_prompt_ragcv": {
+    "auc": 0.7899525316455698,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.3755274261603376,
+     "fpr_planted_benign": 0.08482142857142858
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.33755274261603374,
+    "detection_when_fully_delivered": 0.3103448275862069,
+    "by_depth": {
+     "1-2": 0.39473684210526316,
+     "3-4": 0.3617021276595745,
+     "5-8": 0.373134328358209
+    }
+   },
+   "casa_chunk_ragcv": {
+    "auc": 0.8249321880650995,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.540084388185654,
+     "fpr_planted_benign": 0.07142857142857142
+    },
+    "full_delivery": 0.48945147679324896,
+    "dsr_under_defence": 0.25316455696202533,
+    "detection_when_fully_delivered": 0.4827586206896552,
+    "by_depth": {
+     "1-2": 0.5,
+     "3-4": 0.574468085106383,
+     "5-8": 0.5373134328358209
+    }
+   }
+  },
+  "hijack": {
+   "stateless_prompt": {
+    "auc": 0.5668135925256179,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.008438818565400843,
+     "fpr_planted_benign": 0.0
+    },
+    "recalibrated": {
+     "detection": 0.06751054852320675,
+     "fpr_planted_benign": 0.03571428571428571
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.05263157894736842,
+     "3-4": 0.05319148936170213,
+     "5-8": 0.1044776119402985
+    }
+   },
+   "stateless_chunk": {
+    "auc": 0.6003145720313441,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.016877637130801686,
+     "fpr_planted_benign": 0.0
+    },
+    "recalibrated": {
+     "detection": 0.0759493670886076,
+     "fpr_planted_benign": 0.022321428571428572
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.02631578947368421,
+     "3-4": 0.09574468085106383,
+     "5-8": 0.1044776119402985
+    }
+   },
+   "casa_prompt_zs": {
+    "auc": 0.5679249547920434,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.1350210970464135,
+     "fpr_planted_benign": 0.08928571428571429
+    },
+    "recalibrated": {
+     "detection": 0.04219409282700422,
+     "fpr_planted_benign": 0.05357142857142857
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.06578947368421052,
+     "3-4": 0.02127659574468085,
+     "5-8": 0.04477611940298507
+    }
+   },
+   "casa_chunk_zs": {
+    "auc": 0.5859516274864376,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.05907172995780591,
+     "fpr_planted_benign": 0.04017857142857143
+    },
+    "recalibrated": {
+     "detection": 0.05907172995780591,
+     "fpr_planted_benign": 0.04017857142857143
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.07894736842105263,
+     "3-4": 0.031914893617021274,
+     "5-8": 0.07462686567164178
+    }
+   },
+   "casa_at_chunk_zs": {
+    "auc": 0.5842751657625076,
+    "n_attack": 237,
+    "n_benign": 224,
+    "benchmark": {
+     "detection": 0.15611814345991562,
+     "fpr_planted_benign": 0.09821428571428571
+    },
+    "recalibrated": {
+     "detection": 0.08438818565400844,
+     "fpr_planted_benign": 0.044642857142857144
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.004219409282700422,
+    "detection_when_fully_delivered": 0.5,
+    "by_depth": {
+     "1-2": 0.09210526315789473,
+     "3-4": 0.05319148936170213,
+     "5-8": 0.11940298507462686
+    }
+   },
+   "casa_prompt_rag": {
+    "auc": 0.5932225738396625,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.046413502109704644,
+     "fpr_planted_benign": 0.026785714285714284
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.02631578947368421,
+     "3-4": 0.06382978723404255,
+     "5-8": 0.04477611940298507
+    }
+   },
+   "casa_chunk_rag": {
+    "auc": 0.5920264466546111,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.06751054852320675,
+     "fpr_planted_benign": 0.022321428571428572
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.02631578947368421,
+     "3-4": 0.07446808510638298,
+     "5-8": 0.1044776119402985
+    }
+   },
+   "casa_prompt_ragcv": {
+    "auc": 0.5793776371308016,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.06329113924050633,
+     "fpr_planted_benign": 0.013392857142857142
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.05263157894736842,
+     "3-4": 0.031914893617021274,
+     "5-8": 0.11940298507462686
+    }
+   },
+   "casa_chunk_ragcv": {
+    "auc": 0.584585970464135,
+    "n_attack": 237,
+    "n_benign": 224,
+    "recalibrated": {
+     "detection": 0.04219409282700422,
+     "fpr_planted_benign": 0.022321428571428572
+    },
+    "full_delivery": 0.008438818565400843,
+    "dsr_under_defence": 0.008438818565400843,
+    "detection_when_fully_delivered": 0.0,
+    "by_depth": {
+     "1-2": 0.02631578947368421,
+     "3-4": 0.0425531914893617,
+     "5-8": 0.05970149253731343
+    }
+   }
+  }
+ },
+ "clean": {
+  "val": {
+   "stateless_prompt": {
+    "n": 460,
+    "benchmark": 0.0,
+    "recalibrated": 0.05
+   },
+   "stateless_chunk": {
+    "n": 460,
+    "benchmark": 0.0,
+    "recalibrated": 0.010869565217391304
+   },
+   "casa_prompt_zs": {
+    "n": 460,
+    "benchmark": 0.10217391304347827,
+    "recalibrated": 0.04782608695652174
+   },
+   "casa_chunk_zs": {
+    "n": 460,
+    "benchmark": 0.02826086956521739,
+    "recalibrated": 0.02826086956521739
+   },
+   "casa_at_chunk_zs": {
+    "n": 460,
+    "benchmark": 0.08260869565217391,
+    "recalibrated": 0.043478260869565216
+   },
+   "casa_prompt_rag": {
+    "n": 460,
+    "recalibrated": 0.03260869565217391
+   },
+   "casa_chunk_rag": {
+    "n": 460,
+    "recalibrated": 0.021739130434782608
+   },
+   "casa_prompt_ragcv": {
+    "n": 460,
+    "recalibrated": 0.06304347826086956
+   },
+   "casa_chunk_ragcv": {
+    "n": 460,
+    "recalibrated": 0.01956521739130435
+   }
+  },
+  "test": {
+   "stateless_prompt": {
+    "n": 461,
+    "benchmark": 0.0,
+    "recalibrated": 0.039045553145336226
+   },
+   "stateless_chunk": {
+    "n": 461,
+    "benchmark": 0.0,
+    "recalibrated": 0.010845986984815618
+   },
+   "casa_prompt_zs": {
+    "n": 461,
+    "benchmark": 0.0911062906724512,
+    "recalibrated": 0.052060737527114966
+   },
+   "casa_chunk_zs": {
+    "n": 461,
+    "benchmark": 0.03036876355748373,
+    "recalibrated": 0.03036876355748373
+   },
+   "casa_at_chunk_zs": {
+    "n": 461,
+    "benchmark": 0.0824295010845987,
+    "recalibrated": 0.04338394793926247
+   },
+   "casa_prompt_rag": {
+    "n": 461,
+    "recalibrated": 0.028199566160520606
+   },
+   "casa_chunk_rag": {
+    "n": 461,
+    "recalibrated": 0.010845986984815618
+   },
+   "casa_prompt_ragcv": {
+    "n": 461,
+    "recalibrated": 0.03470715835140998
+   },
+   "casa_chunk_ragcv": {
+    "n": 461,
+    "recalibrated": 0.013015184381778741
+   }
+  }
+ },
+ "canary": {
+  "targeted_canary": {
+   "stateless_prompt": 0.2742616033755274,
+   "stateless_chunk": 0.45569620253164556,
+   "casa_prompt_zs": 0.22784810126582278,
+   "casa_chunk_zs": 0.47257383966244726,
+   "casa_at_chunk_zs": 0.3924050632911392,
+   "casa_prompt_rag": 0.24472573839662448,
+   "casa_chunk_rag": 0.4978902953586498,
+   "casa_prompt_ragcv": 0.25316455696202533,
+   "casa_chunk_ragcv": 0.48523206751054854
+  },
+  "chunkaware_canary": {
+   "stateless_prompt": 0.4472573839662447,
+   "stateless_chunk": 0.5021097046413502,
+   "casa_prompt_zs": 0.3628691983122363,
+   "casa_chunk_zs": 0.510548523206751,
+   "casa_at_chunk_zs": 0.4345991561181435,
+   "casa_prompt_rag": 0.3459915611814346,
+   "casa_chunk_rag": 0.5358649789029536,
+   "casa_prompt_ragcv": 0.38396624472573837,
+   "casa_chunk_ragcv": 0.5316455696202531
+  },
+  "hijack_canary": {
+   "stateless_prompt": 0.06751054852320675,
+   "stateless_chunk": 0.0759493670886076,
+   "casa_prompt_zs": 0.04219409282700422,
+   "casa_chunk_zs": 0.05907172995780591,
+   "casa_at_chunk_zs": 0.08860759493670886,
+   "casa_prompt_rag": 0.046413502109704644,
+   "casa_chunk_rag": 0.06751054852320675,
+   "casa_prompt_ragcv": 0.06329113924050633,
+   "casa_chunk_ragcv": 0.046413502109704644
+  },
+  "chunkaware_override": {
+   "stateless_prompt": 0.4345991561181435,
+   "stateless_chunk": 0.5063291139240507,
+   "casa_prompt_zs": 0.35864978902953587,
+   "casa_chunk_zs": 0.5147679324894515,
+   "casa_at_chunk_zs": 0.4345991561181435,
+   "casa_prompt_rag": 0.35864978902953587,
+   "casa_chunk_rag": 0.5358649789029536,
+   "casa_prompt_ragcv": 0.3881856540084388,
+   "casa_chunk_ragcv": 0.5316455696202531
+  },
+  "directive_plain": {
+   "stateless_prompt": 0.04219409282700422,
+   "stateless_chunk": 0.004219409282700422,
+   "casa_prompt_zs": 0.0379746835443038,
+   "casa_chunk_zs": 0.02531645569620253,
+   "casa_at_chunk_zs": 0.046413502109704644,
+   "casa_prompt_rag": 0.03375527426160337,
+   "casa_chunk_rag": 0.012658227848101266,
+   "casa_prompt_ragcv": 0.046413502109704644,
+   "casa_chunk_ragcv": 0.004219409282700422
+  },
+  "directive_override": {
+   "stateless_prompt": 0.05063291139240506,
+   "stateless_chunk": 0.004219409282700422,
+   "casa_prompt_zs": 0.0379746835443038,
+   "casa_chunk_zs": 0.03375527426160337,
+   "casa_at_chunk_zs": 0.046413502109704644,
+   "casa_prompt_rag": 0.03375527426160337,
+   "casa_chunk_rag": 0.016877637130801686,
+   "casa_prompt_ragcv": 0.05063291139240506,
+   "casa_chunk_ragcv": 0.012658227848101266
+  }
+ }
+}

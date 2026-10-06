@@ -1,0 +1,18 @@
+start Thu Sep 24 08:24:26 UTC 2026
+  attack  stateless  fired on 114/237  (22s)
+  attack  casa_base  fired on 160/237  (127s)
+  attack  casa_at    fired on 160/237  (236s)
+  benign  stateless  fired on 10/224  (257s)
+  benign  casa_base  fired on 24/224  (396s)
+  benign  casa_at    fired on 25/224  (539s)
+wrote results2/defence_decisions.json
+composed    turns  4.9  stateless  48.1  CASA  62.0  CASA-AT  57.0
+original    turns  5.0  stateless  48.1  CASA  57.0  CASA-AT  55.7
+fragmented  turns 15.1  stateless  57.4  CASA  19.8  CASA-AT  42.6
+wrote results2/composed_eval.json
+seed 0 AT      dilute   5.9  combined   0.4  clean-fp  6.2  (1322s)
+seed 0 +P      dilute  17.3  combined   0.8  clean-fp  4.5  (3399s)
+seed 0 +C      dilute   4.6  combined   0.4  clean-fp  6.7  (5064s)
+seed 0 CASA-R  dilute  21.9  combined  10.5  clean-fp  6.2  (7431s)
+wrote results2/casa_fix.json
+CPU_EXP_DONE Thu Sep 24 10:57:38 UTC 2026

@@ -1,0 +1,105 @@
+{
+  "rows": [
+    {
+      "strategy": "none",
+      "kept": 237,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.569620253164557,
+      "CASA-AT (linear)": 0.6371308016877637,
+      "CASA-AT (gbm)": 0.5864978902953587
+    },
+    {
+      "strategy": "split",
+      "kept": 237,
+      "stateless": 0.5738396624472574,
+      "CASA-base": 0.19831223628691982,
+      "CASA-AT (linear)": 0.5738396624472574,
+      "CASA-AT (gbm)": 0.4641350210970464
+    },
+    {
+      "strategy": "pace",
+      "kept": 237,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.08438818565400844,
+      "CASA-AT (linear)": 0.48523206751054854,
+      "CASA-AT (gbm)": 0.5316455696202531
+    },
+    {
+      "strategy": "pace-wide",
+      "kept": 237,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.07172995780590717,
+      "CASA-AT (linear)": 0.4177215189873418,
+      "CASA-AT (gbm)": 0.5189873417721519
+    },
+    {
+      "strategy": "dilute",
+      "kept": 237,
+      "stateless": 0.016877637130801686,
+      "CASA-base": 0.02531645569620253,
+      "CASA-AT (linear)": 0.0379746835443038,
+      "CASA-AT (gbm)": 0.04219409282700422
+    },
+    {
+      "strategy": "launder",
+      "kept": 237,
+      "stateless": 0.47257383966244726,
+      "CASA-base": 0.5443037974683544,
+      "CASA-AT (linear)": 0.620253164556962,
+      "CASA-AT (gbm)": 0.620253164556962
+    },
+    {
+      "strategy": "combined",
+      "kept": 237,
+      "stateless": 0.08860759493670886,
+      "CASA-base": 0.0,
+      "CASA-AT (linear)": 0.016877637130801686,
+      "CASA-AT (gbm)": 0.08860759493670886
+    }
+  ],
+  "fpr_clean": {
+    "stateless": 0.044642857142857144,
+    "CASA-base": 0.04017857142857143,
+    "CASA-AT (linear)": 0.07142857142857142,
+    "CASA-AT (gbm)": 0.05803571428571429
+  },
+  "fpr_fragmented_benign": {
+    "split": {
+      "stateless": null,
+      "CASA-base": 0.013392857142857142,
+      "CASA-AT (linear)": 0.0625,
+      "CASA-AT (gbm)": 0.044642857142857144
+    },
+    "pace": {
+      "stateless": null,
+      "CASA-base": 0.008928571428571428,
+      "CASA-AT (linear)": 0.026785714285714284,
+      "CASA-AT (gbm)": 0.05357142857142857
+    },
+    "pace-wide": {
+      "stateless": null,
+      "CASA-base": 0.004464285714285714,
+      "CASA-AT (linear)": 0.022321428571428572,
+      "CASA-AT (gbm)": 0.049107142857142856
+    },
+    "dilute": {
+      "stateless": null,
+      "CASA-base": 0.0,
+      "CASA-AT (linear)": 0.004464285714285714,
+      "CASA-AT (gbm)": 0.0
+    },
+    "launder": {
+      "stateless": null,
+      "CASA-base": 0.03571428571428571,
+      "CASA-AT (linear)": 0.0625,
+      "CASA-AT (gbm)": 0.05803571428571429
+    },
+    "combined": {
+      "stateless": null,
+      "CASA-base": 0.0,
+      "CASA-AT (linear)": 0.0,
+      "CASA-AT (gbm)": 0.013392857142857142
+    }
+  },
+  "n_train_aug": 4143
+}

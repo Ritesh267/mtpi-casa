@@ -1,0 +1,31 @@
+# Versions installed in the project's virtual environment on the machine that produced
+# results/, results2/ and results3/ (Python 3.13.15, Linux, one NVIDIA Tesla T4).
+# The GPU experiments were run in this environment. The launch scripts of several CPU
+# experiments of results2/ (defence decisions, composed attacks, hardening) name a
+# second interpreter on the same machine, which has the same Python, scikit-learn,
+# scipy and joblib but numpy 2.3.5, pandas 3.0.5 and torch 2.13.0. The versions behind
+# the original run in results_v1_original/ were not recorded.
+#
+# The saved models are scikit-learn pickles. They are not shipped, but if you rebuild
+# them, load them only with the scikit-learn version that wrote them: every script
+# silences warnings, so a version mismatch is not announced.
+
+# Core pipeline: src/, the CPU scripts of src2/ and src3/, scripts/precompute_defence.py
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.0
+joblib==1.6.0
+torch==2.14.0
+matplotlib==3.11.2
+
+# Pretrained models: src2/dpo_gpu_study.py, src2/check_cache.py, scripts/measure_asr_hf.py,
+# src3/rag_lib.py (dense retriever), src3/rag_asr.py
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0      # needed for device_map="cuda"; not imported by name
+bitsandbytes==0.50.2    # needed for 4-bit loading of the two larger models; not imported by name
+
+# Only for scripts/train_dpo_gpu.py, an untested alternative set-up behind no reported number
+trl==1.13.0
+datasets==5.0.1

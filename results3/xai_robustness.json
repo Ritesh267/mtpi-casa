@@ -1,0 +1,79 @@
+{
+ "deployed": {
+  "test_auc": 0.9079076250753467,
+  "group_share": {
+   "accumulator": 0.5290697813034058,
+   "imperative": 0.0007213922799564898,
+   "pooled": 0.0673450231552124,
+   "provenance": 0.13619130849838257,
+   "reassembly": 0.15565961599349976,
+   "structure": 0.04364277794957161,
+   "trajectory": 0.06737006455659866
+  }
+ },
+ "standardised_refit": {
+  "test_auc": 0.901182941531043,
+  "group_share": {
+   "accumulator": 0.1485241800546646,
+   "imperative": 0.02469339221715927,
+   "pooled": 0.14925844967365265,
+   "provenance": 0.27642133831977844,
+   "reassembly": 0.22273898124694824,
+   "structure": 0.05471621826291084,
+   "trajectory": 0.12364737689495087
+  }
+ },
+ "refit_full_auc": 0.9078511151295962,
+ "removal": {
+  "accumulator": {
+   "test_auc": 0.9069657926461724,
+   "delta": -0.0008853224834237672,
+   "n_features": 6
+  },
+  "imperative": {
+   "test_auc": 0.9079641350210971,
+   "delta": 0.00011301989150092062,
+   "n_features": 2
+  },
+  "pooled": {
+   "test_auc": 0.9078887884267631,
+   "delta": 3.767329716697354e-05,
+   "n_features": 6
+  },
+  "provenance": {
+   "test_auc": 0.9070411392405062,
+   "delta": -0.0008099758890899311,
+   "n_features": 5
+  },
+  "reassembly": {
+   "test_auc": 0.9057414104882459,
+   "delta": -0.0021097046413502962,
+   "n_features": 6
+  },
+  "structure": {
+   "test_auc": 0.9069469559975889,
+   "delta": -0.000904159132007254,
+   "n_features": 1
+  },
+  "trajectory": {
+   "test_auc": 0.9088117842073539,
+   "delta": 0.0009606690777577143,
+   "n_features": 5
+  }
+ },
+ "correlation": {
+  "sprt_final~sprt_max": 0.9679639508152235,
+  "sprt_final~p_mean": 0.8971429878611362,
+  "sprt_final~concat_all": 0.8778768836304344,
+  "sprt_max~p_max": 0.7989325350217051
+ },
+ "joint_permutation": {
+  "accumulator": 0.02404046112115746,
+  "imperative": -5.274261603296359e-06,
+  "pooled": 0.00858781645569633,
+  "provenance": 0.0045859704641351496,
+  "reassembly": 0.06941644062688382,
+  "structure": 0.0052949819168174915,
+  "trajectory": 0.005718994876431731
+ }
+}

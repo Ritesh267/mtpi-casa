@@ -1,0 +1,888 @@
+{
+ "bm25": {
+  "targeted": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.5485232067510548,
+     "b": 0.5147679324894515,
+     "diff": 0.033755274261603296,
+     "ci95": [
+      0.0,
+      0.06751054852320681
+     ],
+     "only_a": 13,
+     "only_b": 5,
+     "mcnemar_p": 0.09625244140625
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5522388059701493,
+     "b": 0.4626865671641791,
+     "diff": 0.08955223880597019,
+     "ci95": [
+      0.02985074626865669,
+      0.16417910447761191
+     ],
+     "only_a": 6,
+     "only_b": 0,
+     "mcnemar_p": 0.03125
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.4936708860759494,
+     "b": 0.5147679324894515,
+     "diff": -0.02109704641350213,
+     "ci95": [
+      -0.06329113924050633,
+      0.021097046413502074
+     ],
+     "only_a": 10,
+     "only_b": 15,
+     "mcnemar_p": 0.42435622215270996
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.4626865671641791,
+     "diff": 0.02985074626865669,
+     "ci95": [
+      -0.02985074626865669,
+      0.08955223880597019
+     ],
+     "only_a": 3,
+     "only_b": 1,
+     "mcnemar_p": 0.625
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.5147679324894515,
+     "b": 0.35443037974683544,
+     "diff": 0.16033755274261607,
+     "ci95": [
+      0.10116033755274263,
+      0.21940928270042198
+     ],
+     "only_a": 50,
+     "only_b": 12,
+     "mcnemar_p": 1.2143807700186297e-06
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4626865671641791,
+     "b": 0.417910447761194,
+     "diff": 0.04477611940298509,
+     "ci95": [
+      -0.07462686567164178,
+      0.16417910447761191
+     ],
+     "only_a": 10,
+     "only_b": 7,
+     "mcnemar_p": 0.629058837890625
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.4936708860759494,
+     "b": 0.2911392405063291,
+     "diff": 0.20253164556962028,
+     "ci95": [
+      0.14345991561181437,
+      0.26582278481012656
+     ],
+     "only_a": 54,
+     "only_b": 6,
+     "mcnemar_p": 9.722961671898567e-11
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.373134328358209,
+     "diff": 0.11940298507462682,
+     "ci95": [
+      0.029850746268656747,
+      0.208955223880597
+     ],
+     "only_a": 9,
+     "only_b": 1,
+     "mcnemar_p": 0.021484375
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.5485232067510548,
+     "b": 0.38396624472573837,
+     "diff": 0.16455696202531644,
+     "ci95": [
+      0.10970464135021102,
+      0.21940928270042193
+     ],
+     "only_a": 44,
+     "only_b": 5,
+     "mcnemar_p": 7.59715845788378e-09
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5522388059701493,
+     "b": 0.40298507462686567,
+     "diff": 0.14925373134328362,
+     "ci95": [
+      0.07462686567164178,
+      0.23880597014925375
+     ],
+     "only_a": 10,
+     "only_b": 0,
+     "mcnemar_p": 0.001953125
+    }
+   }
+  },
+  "chunkaware": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.5864978902953587,
+     "b": 0.5654008438818565,
+     "diff": 0.021097046413502185,
+     "ci95": [
+      -0.01265822784810128,
+      0.05485232067510548
+     ],
+     "only_a": 11,
+     "only_b": 6,
+     "mcnemar_p": 0.332305908203125
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5522388059701493,
+     "b": 0.4626865671641791,
+     "diff": 0.08955223880597019,
+     "ci95": [
+      0.02985074626865669,
+      0.16417910447761197
+     ],
+     "only_a": 6,
+     "only_b": 0,
+     "mcnemar_p": 0.03125
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.5274261603375527,
+     "b": 0.5654008438818565,
+     "diff": -0.03797468354430378,
+     "ci95": [
+      -0.08016877637130804,
+      0.0042194092827004814
+     ],
+     "only_a": 9,
+     "only_b": 18,
+     "mcnemar_p": 0.12207812070846558
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.4626865671641791,
+     "diff": 0.02985074626865669,
+     "ci95": [
+      -0.02985074626865669,
+      0.08955223880597013
+     ],
+     "only_a": 3,
+     "only_b": 1,
+     "mcnemar_p": 0.625
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.5654008438818565,
+     "b": 0.5021097046413502,
+     "diff": 0.06329113924050633,
+     "ci95": [
+      0.008438818565400852,
+      0.11814345991561187
+     ],
+     "only_a": 31,
+     "only_b": 16,
+     "mcnemar_p": 0.03998605682605215
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4626865671641791,
+     "b": 0.47761194029850745,
+     "diff": -0.014925373134328346,
+     "ci95": [
+      -0.13432835820895522,
+      0.10447761194029853
+     ],
+     "only_a": 8,
+     "only_b": 9,
+     "mcnemar_p": 1.0
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.5274261603375527,
+     "b": 0.4430379746835443,
+     "diff": 0.08438818565400846,
+     "ci95": [
+      0.02953586497890298,
+      0.1392405063291139
+     ],
+     "only_a": 31,
+     "only_b": 11,
+     "mcnemar_p": 0.002887247974285856
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.417910447761194,
+     "diff": 0.07462686567164178,
+     "ci95": [
+      0.0,
+      0.14925373134328362
+     ],
+     "only_a": 6,
+     "only_b": 1,
+     "mcnemar_p": 0.125
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.5864978902953587,
+     "b": 0.46835443037974683,
+     "diff": 0.11814345991561187,
+     "ci95": [
+      0.06329113924050633,
+      0.1729957805907173
+     ],
+     "only_a": 37,
+     "only_b": 9,
+     "mcnemar_p": 4.0560361327379724e-05
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5522388059701493,
+     "b": 0.44776119402985076,
+     "diff": 0.10447761194029853,
+     "ci95": [
+      0.014925373134328346,
+      0.19402985074626872
+     ],
+     "only_a": 9,
+     "only_b": 2,
+     "mcnemar_p": 0.0654296875
+    }
+   }
+  },
+  "hijack": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.13924050632911392,
+     "b": 0.10970464135021098,
+     "diff": 0.02953586497890294,
+     "ci95": [
+      0.0,
+      0.05907172995780591
+     ],
+     "only_a": 10,
+     "only_b": 3,
+     "mcnemar_p": 0.09228515625
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.1791044776119403,
+     "b": 0.08955223880597014,
+     "diff": 0.08955223880597014,
+     "ci95": [
+      0.029850746268656712,
+      0.16417910447761194
+     ],
+     "only_a": 6,
+     "only_b": 0,
+     "mcnemar_p": 0.03125
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.10548523206751055,
+     "b": 0.10970464135021098,
+     "diff": -0.004219409282700426,
+     "ci95": [
+      -0.03797468354430379,
+      0.029535864978902954
+     ],
+     "only_a": 7,
+     "only_b": 8,
+     "mcnemar_p": 1.0
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.11940298507462686,
+     "b": 0.08955223880597014,
+     "diff": 0.02985074626865672,
+     "ci95": [
+      0.0,
+      0.07462686567164178
+     ],
+     "only_a": 2,
+     "only_b": 0,
+     "mcnemar_p": 0.5
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.10970464135021098,
+     "b": 0.10548523206751055,
+     "diff": 0.004219409282700426,
+     "ci95": [
+      -0.03375527426160338,
+      0.04219409282700423
+     ],
+     "only_a": 12,
+     "only_b": 11,
+     "mcnemar_p": 1.0
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.08955223880597014,
+     "b": 0.16417910447761194,
+     "diff": -0.0746268656716418,
+     "ci95": [
+      -0.1492537313432836,
+      0.0
+     ],
+     "only_a": 1,
+     "only_b": 6,
+     "mcnemar_p": 0.125
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.10548523206751055,
+     "b": 0.11814345991561181,
+     "diff": -0.012658227848101264,
+     "ci95": [
+      -0.06329113924050632,
+      0.03797468354430379
+     ],
+     "only_a": 16,
+     "only_b": 19,
+     "mcnemar_p": 0.735878800856881
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.11940298507462686,
+     "b": 0.13432835820895522,
+     "diff": -0.01492537313432836,
+     "ci95": [
+      -0.11940298507462688,
+      0.08955223880597016
+     ],
+     "only_a": 6,
+     "only_b": 7,
+     "mcnemar_p": 1.0
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.13924050632911392,
+     "b": 0.12658227848101267,
+     "diff": 0.01265822784810125,
+     "ci95": [
+      -0.029535864978902954,
+      0.05485232067510547
+     ],
+     "only_a": 14,
+     "only_b": 11,
+     "mcnemar_p": 0.6900379657745361
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.1791044776119403,
+     "b": 0.16417910447761194,
+     "diff": 0.014925373134328346,
+     "ci95": [
+      -0.08955223880597016,
+      0.11940298507462688
+     ],
+     "only_a": 7,
+     "only_b": 6,
+     "mcnemar_p": 1.0
+    }
+   }
+  }
+ },
+ "dense": {
+  "targeted": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.4978902953586498,
+     "b": 0.4767932489451477,
+     "diff": 0.02109704641350213,
+     "ci95": [
+      -0.016877637130801704,
+      0.05907172995780591
+     ],
+     "only_a": 13,
+     "only_b": 8,
+     "mcnemar_p": 0.38331031799316406
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5223880597014925,
+     "b": 0.44776119402985076,
+     "diff": 0.07462686567164173,
+     "ci95": [
+      0.0,
+      0.14925373134328362
+     ],
+     "only_a": 6,
+     "only_b": 1,
+     "mcnemar_p": 0.125
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.4810126582278481,
+     "b": 0.4767932489451477,
+     "diff": 0.004219409282700426,
+     "ci95": [
+      -0.03797468354430378,
+      0.042194092827004204
+     ],
+     "only_a": 12,
+     "only_b": 11,
+     "mcnemar_p": 1.0
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.47761194029850745,
+     "b": 0.44776119402985076,
+     "diff": 0.02985074626865669,
+     "ci95": [
+      -0.04477611940298509,
+      0.10447761194029853
+     ],
+     "only_a": 4,
+     "only_b": 2,
+     "mcnemar_p": 0.6875
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.4767932489451477,
+     "b": 0.28270042194092826,
+     "diff": 0.19409282700421943,
+     "ci95": [
+      0.13502109704641352,
+      0.25316455696202533
+     ],
+     "only_a": 54,
+     "only_b": 8,
+     "mcnemar_p": 1.709326186236787e-09
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.44776119402985076,
+     "b": 0.34328358208955223,
+     "diff": 0.10447761194029853,
+     "ci95": [
+      0.0,
+      0.22388059701492535
+     ],
+     "only_a": 11,
+     "only_b": 4,
+     "mcnemar_p": 0.11846923828124999
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.4810126582278481,
+     "b": 0.2320675105485232,
+     "diff": 0.2489451476793249,
+     "ci95": [
+      0.18987341772151897,
+      0.3122362869198312
+     ],
+     "only_a": 64,
+     "only_b": 5,
+     "mcnemar_p": 4.119230997967627e-14
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.47761194029850745,
+     "b": 0.29850746268656714,
+     "diff": 0.17910447761194032,
+     "ci95": [
+      0.05970149253731344,
+      0.29850746268656714
+     ],
+     "only_a": 16,
+     "only_b": 4,
+     "mcnemar_p": 0.01181793212890625
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.4978902953586498,
+     "b": 0.24472573839662448,
+     "diff": 0.25316455696202533,
+     "ci95": [
+      0.19409282700421937,
+      0.31645569620253167
+     ],
+     "only_a": 66,
+     "only_b": 6,
+     "mcnemar_p": 7.255748219519502e-14
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5223880597014925,
+     "b": 0.26865671641791045,
+     "diff": 0.25373134328358204,
+     "ci95": [
+      0.11940298507462688,
+      0.3880597014925373
+     ],
+     "only_a": 21,
+     "only_b": 4,
+     "mcnemar_p": 0.0009105205535888672
+    }
+   }
+  },
+  "chunkaware": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.5443037974683544,
+     "b": 0.5189873417721519,
+     "diff": 0.025316455696202556,
+     "ci95": [
+      -0.008438818565400852,
+      0.06329113924050628
+     ],
+     "only_a": 13,
+     "only_b": 7,
+     "mcnemar_p": 0.26317596435546875
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5373134328358209,
+     "b": 0.4626865671641791,
+     "diff": 0.07462686567164178,
+     "ci95": [
+      0.0,
+      0.16417910447761186
+     ],
+     "only_a": 6,
+     "only_b": 1,
+     "mcnemar_p": 0.125
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.5232067510548524,
+     "b": 0.5189873417721519,
+     "diff": 0.0042194092827004814,
+     "ci95": [
+      -0.03797468354430383,
+      0.046413502109704685
+     ],
+     "only_a": 15,
+     "only_b": 14,
+     "mcnemar_p": 1.0
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.4626865671641791,
+     "diff": 0.02985074626865669,
+     "ci95": [
+      -0.04477611940298509,
+      0.11940298507462682
+     ],
+     "only_a": 5,
+     "only_b": 3,
+     "mcnemar_p": 0.7265625
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.5189873417721519,
+     "b": 0.41350210970464135,
+     "diff": 0.10548523206751054,
+     "ci95": [
+      0.05063291139240511,
+      0.16033755274261602
+     ],
+     "only_a": 35,
+     "only_b": 10,
+     "mcnemar_p": 0.00024708778460080794
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4626865671641791,
+     "b": 0.3880597014925373,
+     "diff": 0.07462686567164178,
+     "ci95": [
+      -0.029850746268656747,
+      0.1940298507462686
+     ],
+     "only_a": 10,
+     "only_b": 5,
+     "mcnemar_p": 0.30175781249999994
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.5232067510548524,
+     "b": 0.35864978902953587,
+     "diff": 0.1645569620253165,
+     "ci95": [
+      0.10970464135021096,
+      0.21951476793248795
+     ],
+     "only_a": 46,
+     "only_b": 7,
+     "mcnemar_p": 4.003196174551249e-08
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.4925373134328358,
+     "b": 0.3582089552238806,
+     "diff": 0.13432835820895522,
+     "ci95": [
+      0.014925373134328401,
+      0.25373134328358204
+     ],
+     "only_a": 13,
+     "only_b": 4,
+     "mcnemar_p": 0.049041748046875
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.5443037974683544,
+     "b": 0.3459915611814346,
+     "diff": 0.19831223628691985,
+     "ci95": [
+      0.14345991561181431,
+      0.25738396624472576
+     ],
+     "only_a": 52,
+     "only_b": 5,
+     "mcnemar_p": 6.401865149108231e-11
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.5373134328358209,
+     "b": 0.2835820895522388,
+     "diff": 0.2537313432835821,
+     "ci95": [
+      0.11940298507462693,
+      0.37313432835820903
+     ],
+     "only_a": 20,
+     "only_b": 3,
+     "mcnemar_p": 0.00048828125
+    }
+   }
+  },
+  "hijack": {
+   "casa_chunk_rag__vs__stateless_chunk": {
+    "what": "conversation layer (refitted) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.06751054852320675,
+     "b": 0.0759493670886076,
+     "diff": -0.008438818565400852,
+     "ci95": [
+      -0.03375527426160338,
+      0.01687763713080169
+     ],
+     "only_a": 4,
+     "only_b": 6,
+     "mcnemar_p": 0.75390625
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.1044776119402985,
+     "b": 0.1044776119402985,
+     "diff": 0.0,
+     "ci95": [
+      -0.07462686567164178,
+      0.07462686567164178
+     ],
+     "only_a": 3,
+     "only_b": 3,
+     "mcnemar_p": 1.0
+    }
+   },
+   "casa_chunk_zs__vs__stateless_chunk": {
+    "what": "conversation layer (benchmark-trained) vs stateless, both chunk-level",
+    "all": {
+     "n": 237,
+     "a": 0.05907172995780591,
+     "b": 0.0759493670886076,
+     "diff": -0.01687763713080169,
+     "ci95": [
+      -0.046413502109704644,
+      0.01265822784810127
+     ],
+     "only_a": 5,
+     "only_b": 9,
+     "mcnemar_p": 0.4239501953125
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.07462686567164178,
+     "b": 0.1044776119402985,
+     "diff": -0.02985074626865672,
+     "ci95": [
+      -0.08955223880597016,
+      0.029850746268656712
+     ],
+     "only_a": 1,
+     "only_b": 3,
+     "mcnemar_p": 0.625
+    }
+   },
+   "stateless_chunk__vs__stateless_prompt": {
+    "what": "chunk-level vs prompt-level scoring, stateless",
+    "all": {
+     "n": 237,
+     "a": 0.0759493670886076,
+     "b": 0.06751054852320675,
+     "diff": 0.008438818565400852,
+     "ci95": [
+      -0.029535864978902954,
+      0.046413502109704644
+     ],
+     "only_a": 12,
+     "only_b": 10,
+     "mcnemar_p": 0.8318119049072266
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.1044776119402985,
+     "b": 0.1044776119402985,
+     "diff": 0.0,
+     "ci95": [
+      -0.07462686567164178,
+      0.07462686567164178
+     ],
+     "only_a": 3,
+     "only_b": 3,
+     "mcnemar_p": 1.0
+    }
+   },
+   "casa_chunk_zs__vs__casa_prompt_zs": {
+    "what": "chunk-level vs prompt-level scoring, CASA as trained",
+    "all": {
+     "n": 237,
+     "a": 0.05907172995780591,
+     "b": 0.04219409282700422,
+     "diff": 0.01687763713080169,
+     "ci95": [
+      -0.016877637130801686,
+      0.05063291139240506
+     ],
+     "only_a": 10,
+     "only_b": 6,
+     "mcnemar_p": 0.454498291015625
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.07462686567164178,
+     "b": 0.04477611940298507,
+     "diff": 0.029850746268656712,
+     "ci95": [
+      -0.029850746268656712,
+      0.08955223880597014
+     ],
+     "only_a": 3,
+     "only_b": 1,
+     "mcnemar_p": 0.625
+    }
+   },
+   "casa_chunk_rag__vs__casa_prompt_rag": {
+    "what": "chunk-level vs prompt-level scoring, CASA refitted",
+    "all": {
+     "n": 237,
+     "a": 0.06751054852320675,
+     "b": 0.046413502109704644,
+     "diff": 0.021097046413502102,
+     "ci95": [
+      -0.012658227848101264,
+      0.05485232067510548
+     ],
+     "only_a": 10,
+     "only_b": 5,
+     "mcnemar_p": 0.30175781249999994
+    },
+    "five_or_more_payload_turns": {
+     "n": 67,
+     "a": 0.1044776119402985,
+     "b": 0.04477611940298507,
+     "diff": 0.05970149253731343,
+     "ci95": [
+      -0.01492537313432836,
+      0.14925373134328357
+     ],
+     "only_a": 6,
+     "only_b": 2,
+     "mcnemar_p": 0.2890625
+    }
+   }
+  }
+ }
+}

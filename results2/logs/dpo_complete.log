@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:11<1:03:54, 11.38s/it]Loading weights:  43%|████▎     | 147/338 [00:11<00:10, 17.55it/s]Loading weights:  54%|█████▍    | 184/338 [00:13<00:08, 17.47it/s]Loading weights:  59%|█████▉    | 201/338 [00:14<00:07, 17.96it/s]Loading weights:  62%|██████▏   | 211/338 [00:15<00:07, 16.84it/s]Loading weights:  65%|██████▍   | 219/338 [00:15<00:06, 17.22it/s]Loading weights:  66%|██████▋   | 224/338 [00:16<00:06, 17.12it/s]Loading weights:  68%|██████▊   | 231/338 [00:16<00:06, 16.26it/s]Loading weights:  69%|██████▉   | 234/338 [00:17<00:06, 16.40it/s]Loading weights:  72%|███████▏  | 243/338 [00:17<00:05, 16.35it/s]Loading weights:  73%|███████▎  | 246/338 [00:17<00:05, 16.78it/s]Loading weights:  75%|███████▌  | 255/338 [00:18<00:05, 16.58it/s]Loading weights:  76%|███████▋  | 258/338 [00:18<00:04, 16.85it/s]Loading weights:  79%|███████▉  | 267/338 [00:18<00:04, 16.69it/s]Loading weights:  80%|███████▉  | 269/338 [00:19<00:04, 15.41it/s]Loading weights:  83%|████████▎ | 279/338 [00:19<00:03, 17.71it/s]Loading weights:  83%|████████▎ | 281/338 [00:19<00:03, 16.11it/s]Loading weights:  86%|████████▌ | 291/338 [00:20<00:02, 16.72it/s]Loading weights:  87%|████████▋ | 293/338 [00:20<00:02, 15.63it/s]Loading weights:  90%|████████▉ | 303/338 [00:21<00:01, 17.53it/s]Loading weights:  90%|█████████ | 305/338 [00:21<00:02, 16.20it/s]Loading weights:  93%|█████████▎| 315/338 [00:21<00:01, 16.89it/s]Loading weights:  94%|█████████▍| 317/338 [00:22<00:01, 16.33it/s]Loading weights:  97%|█████████▋| 327/338 [00:22<00:00, 17.71it/s]Loading weights: 100%|██████████| 338/338 [00:22<00:00, 14.97it/s]
+Qwen2.5-1.5B-Instruct__A3_weak_boundary__seed1: 600 pairs, labels agree with ground truth on 54.8%
+  step 10/75 loss 0.7131 pref-acc 0.375 (123s)
+  step 20/75 loss 0.7023 pref-acc 0.500 (178s)
+  step 30/75 loss 0.6917 pref-acc 0.562 (234s)
+  step 40/75 loss 0.5540 pref-acc 1.000 (290s)
+  step 50/75 loss 0.5928 pref-acc 0.750 (345s)
+  step 60/75 loss 0.6096 pref-acc 0.625 (401s)
+  step 70/75 loss 0.5983 pref-acc 0.875 (457s)
+  step 75/75 loss 0.5644 pref-acc 0.812 (486s)
+[W925 21:16:26.992837026 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 138412032 bytes (free: 98369536, total: 15637086208).
+Qwen2.5-1.5B-Instruct__A3_weak_boundary__seed1: refusal AUC 0.6269  refuse attacks 52.3%  benign 36.2%  separation +16.2 pp  NLL 2.649  (669s)
+DONE

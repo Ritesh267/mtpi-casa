@@ -1,0 +1,30 @@
+  [bm25] train targeted           1381 sessions  (19s)
+  [bm25] train chunkaware         1381 sessions  (36s)
+  [bm25] train hijack             1381 sessions  (52s)
+  [bm25] val   targeted           460 sessions  (66s)
+  [bm25] val   chunkaware         460 sessions  (81s)
+  [bm25] val   hijack             460 sessions  (97s)
+  [bm25] val   clean              460 sessions  (113s)
+  [bm25] test  targeted           461 sessions  (127s)
+  [bm25] test  chunkaware         461 sessions  (141s)
+  [bm25] test  hijack             461 sessions  (156s)
+  [bm25] test  clean              461 sessions  (174s)
+  [bm25] test  targeted_canary    237 sessions  (189s)
+  [bm25] test  chunkaware_canary  237 sessions  (201s)
+  [bm25] test  hijack_canary      237 sessions  (214s)
+  [bm25] test  chunkaware_override 237 sessions  (259s)
+  [bm25] test  directive_plain    237 sessions  (272s)
+  [bm25] test  directive_override 237 sessions  (333s)
+
+[bm25] online detection at the recalibrated 5% budget (planted-benign FPR in brackets), k=5
+  stateless_prompt   targeted:  35.4% [ 4.0%]  chunkaware:  50.2% [ 5.8%]  hijack:  10.5% [ 4.0%]   clean FPR  5.9%
+  stateless_chunk    targeted:  51.5% [ 4.9%]  chunkaware:  56.5% [ 5.4%]  hijack:  11.0% [ 1.3%]   clean FPR  0.2%
+  casa_prompt_zs     targeted:  29.1% [ 7.6%]  chunkaware:  44.3% [ 8.9%]  hijack:  11.8% [ 6.2%]   clean FPR  7.2%
+  casa_chunk_zs      targeted:  49.4% [ 4.5%]  chunkaware:  52.7% [ 4.9%]  hijack:  10.5% [ 2.2%]   clean FPR  1.7%
+  casa_at_chunk_zs   targeted:  32.1% [ 5.4%]  chunkaware:  35.4% [ 5.8%]  hijack:   7.2% [ 3.1%]   clean FPR  2.8%
+  casa_prompt_rag    targeted:  38.4% [ 3.6%]  chunkaware:  46.8% [ 4.9%]  hijack:  12.7% [ 1.3%]   clean FPR  3.3%
+  casa_chunk_rag     targeted:  54.9% [ 4.5%]  chunkaware:  58.6% [ 5.4%]  hijack:  13.9% [ 1.3%]   clean FPR  2.2%
+  casa_prompt_ragcv  targeted:  36.7% [ 3.1%]  chunkaware:  50.2% [ 5.4%]  hijack:  13.1% [ 2.2%]   clean FPR  3.7%
+  casa_chunk_ragcv   targeted:  50.2% [ 4.5%]  chunkaware:  52.7% [ 5.8%]  hijack:  11.0% [ 1.3%]   clean FPR  1.5%
+[bm25] done in 341s
+DONE

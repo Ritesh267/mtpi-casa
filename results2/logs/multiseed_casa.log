@@ -1,0 +1,105 @@
+seed 1: stack fitted (121s)
+seed 1: turns and windows scored (628s)
+{
+  "seed": 1,
+  "turn_auc": 0.8676531472225135,
+  "sprt_cfg": {
+    "leak": 0.8,
+    "alarm": 1.0,
+    "prior_user": 0.45
+  },
+  "stateless": {
+    "recall": 0.588495575221239,
+    "fpr": 0.0851063829787234,
+    "auc": 0.8527207682169082
+  },
+  "casa_linear": {
+    "recall": 0.6238938053097345,
+    "fpr": 0.05531914893617021,
+    "auc": 0.8789870080964037
+  },
+  "n_test": 461,
+  "n_test_attack": 226,
+  "oracle_auc": 0.9029937864808887,
+  "recovered_pct": 52.24719101123615,
+  "time_s": 649.6744055747986
+}
+seed 2: stack fitted (114s)
+seed 2: turns and windows scored (558s)
+{
+  "seed": 2,
+  "turn_auc": 0.8728243951849496,
+  "sprt_cfg": {
+    "leak": 0.8,
+    "alarm": 1.0,
+    "prior_user": 0.45
+  },
+  "stateless": {
+    "recall": 0.46218487394957986,
+    "fpr": 0.05829596412556054,
+    "auc": 0.8410897991483588
+  },
+  "casa_linear": {
+    "recall": 0.592436974789916,
+    "fpr": 0.04484304932735426,
+    "auc": 0.8894939141575913
+  },
+  "n_test": 461,
+  "n_test_attack": 238,
+  "oracle_auc": 0.9141199080529073,
+  "recovered_pct": 66.27966976264186,
+  "time_s": 583.578866481781
+}
+seed 3: stack fitted (114s)
+seed 3: turns and windows scored (511s)
+{
+  "seed": 3,
+  "turn_auc": 0.8517289174204844,
+  "sprt_cfg": {
+    "leak": 0.88,
+    "alarm": 1.0,
+    "prior_user": 0.45
+  },
+  "stateless": {
+    "recall": 0.4823008849557522,
+    "fpr": 0.08085106382978724,
+    "auc": 0.8189606477122954
+  },
+  "casa_linear": {
+    "recall": 0.6504424778761062,
+    "fpr": 0.08085106382978724,
+    "auc": 0.8569384296742609
+  },
+  "n_test": 461,
+  "n_test_attack": 226,
+  "oracle_auc": 0.8912445867068349,
+  "recovered_pct": 52.53972388642857,
+  "time_s": 523.200788974762
+}
+seed 4: stack fitted (81s)
+seed 4: turns and windows scored (479s)
+{
+  "seed": 4,
+  "turn_auc": 0.8593614384787591,
+  "sprt_cfg": {
+    "leak": 0.8,
+    "alarm": 1.0,
+    "prior_user": 0.45
+  },
+  "stateless": {
+    "recall": 0.4247787610619469,
+    "fpr": 0.02553191489361702,
+    "auc": 0.845810581811335
+  },
+  "casa_linear": {
+    "recall": 0.6061946902654868,
+    "fpr": 0.03829787234042553,
+    "auc": 0.8775748446620223
+  },
+  "n_test": 461,
+  "n_test_attack": 226,
+  "oracle_auc": 0.8955752212389381,
+  "recovered_pct": 63.82898221717759,
+  "time_s": 496.1291387081146
+}
+CHAIN_DONE

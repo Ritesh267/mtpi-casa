@@ -1,0 +1,234 @@
+{
+  "base_auc": 0.9079076250753467,
+  "features": [
+    {
+      "feature": "sprt_final",
+      "group": "accumulator",
+      "coef_std": 3.2886738777160645,
+      "perm_importance": 0.3017188441832431,
+      "mean_abs_shap": 2.807119131088257
+    },
+    {
+      "feature": "sprt_max",
+      "group": "accumulator",
+      "coef_std": -1.62430739402771,
+      "perm_importance": 0.014929456751054965,
+      "mean_abs_shap": 1.375342607498169
+    },
+    {
+      "feature": "frac_retrieved",
+      "group": "provenance",
+      "coef_std": -0.7263343334197998,
+      "perm_importance": 0.00937217450271261,
+      "mean_abs_shap": 0.6806468367576599
+    },
+    {
+      "feature": "concat_retrieved",
+      "group": "provenance",
+      "coef_std": 0.7297584414482117,
+      "perm_importance": 0.010238189421338278,
+      "mean_abs_shap": 0.6359390020370483
+    },
+    {
+      "feature": "sprt_mean",
+      "group": "accumulator",
+      "coef_std": -0.6028501391410828,
+      "perm_importance": 0.0013990920735384104,
+      "mean_abs_shap": 0.49332430958747864
+    },
+    {
+      "feature": "log_turns",
+      "group": "structure",
+      "coef_std": -0.5187481641769409,
+      "perm_importance": 0.005170660036166513,
+      "mean_abs_shap": 0.42247599363327026
+    },
+    {
+      "feature": "concat_all",
+      "group": "reassembly",
+      "coef_std": 0.4410756826400757,
+      "perm_importance": 0.004506668173598666,
+      "mean_abs_shap": 0.4120398759841919
+    },
+    {
+      "feature": "win2_max",
+      "group": "reassembly",
+      "coef_std": 0.4221080243587494,
+      "perm_importance": 0.0029648884870404958,
+      "mean_abs_shap": 0.38374584913253784
+    },
+    {
+      "feature": "concat_user",
+      "group": "reassembly",
+      "coef_std": 0.28789812326431274,
+      "perm_importance": 0.0017051876130200205,
+      "mean_abs_shap": 0.2631378471851349
+    },
+    {
+      "feature": "win3_max",
+      "group": "reassembly",
+      "coef_std": 0.24965046346187592,
+      "perm_importance": 0.0015224721217602377,
+      "mean_abs_shap": 0.2296292632818222
+    },
+    {
+      "feature": "high_rate",
+      "group": "trajectory",
+      "coef_std": 0.25129497051239014,
+      "perm_importance": 0.0012700610307415483,
+      "mean_abs_shap": 0.21502384543418884
+    },
+    {
+      "feature": "frac_high",
+      "group": "trajectory",
+      "coef_std": 0.25129497051239014,
+      "perm_importance": 0.001509286467751797,
+      "mean_abs_shap": 0.21502384543418884
+    },
+    {
+      "feature": "alarm_fired",
+      "group": "accumulator",
+      "coef_std": -0.20630738139152527,
+      "perm_importance": -0.0004954038577455189,
+      "mean_abs_shap": 0.2062254399061203
+    },
+    {
+      "feature": "p_top2",
+      "group": "pooled",
+      "coef_std": 0.22780299186706543,
+      "perm_importance": 0.0015672091621459939,
+      "mean_abs_shap": 0.20296058058738708
+    },
+    {
+      "feature": "alarm_pos_norm",
+      "group": "accumulator",
+      "coef_std": 0.19003593921661377,
+      "perm_importance": -0.001185767028330198,
+      "mean_abs_shap": 0.17246590554714203
+    },
+    {
+      "feature": "win3_mean",
+      "group": "reassembly",
+      "coef_std": 0.19111470878124237,
+      "perm_importance": 0.0009597272453286676,
+      "mean_abs_shap": 0.1718592643737793
+    },
+    {
+      "feature": "p_mean",
+      "group": "pooled",
+      "coef_std": 0.17569057643413544,
+      "perm_importance": 0.0004859855334540308,
+      "mean_abs_shap": 0.1471642553806305
+    },
+    {
+      "feature": "p_max",
+      "group": "pooled",
+      "coef_std": 0.16219204664230347,
+      "perm_importance": 0.0002943226341170557,
+      "mean_abs_shap": 0.14669455587863922
+    },
+    {
+      "feature": "second_half_lift",
+      "group": "trajectory",
+      "coef_std": 0.1482485681772232,
+      "perm_importance": 0.00016482067510560362,
+      "mean_abs_shap": 0.11345724761486053
+    },
+    {
+      "feature": "p_median",
+      "group": "pooled",
+      "coef_std": 0.11460420489311218,
+      "perm_importance": 0.0006437424653407131,
+      "mean_abs_shap": 0.09975838661193848
+    },
+    {
+      "feature": "max_run_norm",
+      "group": "trajectory",
+      "coef_std": 0.1036212295293808,
+      "perm_importance": 0.00040122061482835146,
+      "mean_abs_shap": 0.08606607466936111
+    },
+    {
+      "feature": "sprt_slope",
+      "group": "accumulator",
+      "coef_std": 0.08482518792152405,
+      "perm_importance": 0.00019778481012670547,
+      "mean_abs_shap": 0.06708657741546631
+    },
+    {
+      "feature": "win2_mean",
+      "group": "reassembly",
+      "coef_std": 0.053119219839572906,
+      "perm_importance": 0.0003682564798072441,
+      "mean_abs_shap": 0.04642266780138016
+    },
+    {
+      "feature": "p_std",
+      "group": "pooled",
+      "coef_std": 0.04503130167722702,
+      "perm_importance": 0.00031928119349019515,
+      "mean_abs_shap": 0.03939591348171234
+    },
+    {
+      "feature": "p_slope",
+      "group": "trajectory",
+      "coef_std": 0.03359190747141838,
+      "perm_importance": 5.085895117545869e-05,
+      "mean_abs_shap": 0.02259264886379242
+    },
+    {
+      "feature": "p_min",
+      "group": "pooled",
+      "coef_std": -0.02549811080098152,
+      "perm_importance": 3.2964135022184315e-06,
+      "mean_abs_shap": 0.015947528183460236
+    },
+    {
+      "feature": "imp_max",
+      "group": "imperative",
+      "coef_std": -0.009798030368983746,
+      "perm_importance": -9.418324291676771e-06,
+      "mean_abs_shap": 0.006244793999940157
+    },
+    {
+      "feature": "imp_gap",
+      "group": "provenance",
+      "coef_std": 0.001186721958220005,
+      "perm_importance": 4.285337552747404e-05,
+      "mean_abs_shap": 0.0008811041479930282
+    },
+    {
+      "feature": "imp_user",
+      "group": "provenance",
+      "coef_std": -0.0011381962103769183,
+      "perm_importance": 3.955696202536663e-05,
+      "mean_abs_shap": 0.0008630439406260848
+    },
+    {
+      "feature": "imp_mean",
+      "group": "imperative",
+      "coef_std": -0.0010465793311595917,
+      "perm_importance": 1.0360156720934377e-05,
+      "mean_abs_shap": 0.0007385130738839507
+    },
+    {
+      "feature": "imp_retrieved",
+      "group": "provenance",
+      "coef_std": -5.6807904911693186e-05,
+      "perm_importance": 0.0,
+      "mean_abs_shap": 4.5288896217243746e-05
+    }
+  ],
+  "group_share": {
+    "accumulator": 0.5290697957018865,
+    "reassembly": 0.1556596319487886,
+    "provenance": 0.1361913161211778,
+    "trajectory": 0.06737006456974202,
+    "pooled": 0.06734501974294198,
+    "structure": 0.043642779608784696,
+    "imperative": 0.0007213923066784445
+  },
+  "top_feature": "sprt_final",
+  "top_group": "accumulator",
+  "note": "Attribution of one fitted model (L2 logistic regression on unscaled features). See results3/xai_robustness.json for scale, removal and collinearity checks before reading it as component importance."
+}

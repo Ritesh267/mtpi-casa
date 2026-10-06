@@ -1,0 +1,30 @@
+  [dense] train targeted           1381 sessions  (22s)
+  [dense] train chunkaware         1381 sessions  (38s)
+  [dense] train hijack             1381 sessions  (56s)
+  [dense] val   targeted           460 sessions  (78s)
+  [dense] val   chunkaware         460 sessions  (103s)
+  [dense] val   hijack             460 sessions  (129s)
+  [dense] val   clean              460 sessions  (155s)
+  [dense] test  targeted           461 sessions  (179s)
+  [dense] test  chunkaware         461 sessions  (193s)
+  [dense] test  hijack             461 sessions  (207s)
+  [dense] test  clean              461 sessions  (223s)
+  [dense] test  targeted_canary    237 sessions  (231s)
+  [dense] test  chunkaware_canary  237 sessions  (238s)
+  [dense] test  hijack_canary      237 sessions  (250s)
+  [dense] test  chunkaware_override 237 sessions  (275s)
+  [dense] test  directive_plain    237 sessions  (284s)
+  [dense] test  directive_override 237 sessions  (335s)
+
+[dense] online detection at the recalibrated 5% budget (planted-benign FPR in brackets), k=5
+  stateless_prompt   targeted:  28.3% [ 4.9%]  chunkaware:  41.4% [ 7.6%]  hijack:   6.8% [ 3.6%]   clean FPR  3.9%
+  stateless_chunk    targeted:  47.7% [ 5.4%]  chunkaware:  51.9% [ 6.2%]  hijack:   7.6% [ 2.2%]   clean FPR  1.1%
+  casa_prompt_zs     targeted:  23.2% [ 6.2%]  chunkaware:  35.9% [ 7.1%]  hijack:   4.2% [ 5.4%]   clean FPR  5.2%
+  casa_chunk_zs      targeted:  48.1% [ 5.8%]  chunkaware:  52.3% [ 7.1%]  hijack:   5.9% [ 4.0%]   clean FPR  3.0%
+  casa_at_chunk_zs   targeted:  37.6% [ 7.1%]  chunkaware:  43.9% [ 8.9%]  hijack:   8.4% [ 4.5%]   clean FPR  4.3%
+  casa_prompt_rag    targeted:  24.5% [ 4.9%]  chunkaware:  34.6% [ 7.6%]  hijack:   4.6% [ 2.7%]   clean FPR  2.8%
+  casa_chunk_rag     targeted:  49.8% [ 4.0%]  chunkaware:  54.4% [ 5.8%]  hijack:   6.8% [ 2.2%]   clean FPR  1.1%
+  casa_prompt_ragcv  targeted:  25.7% [ 4.5%]  chunkaware:  37.6% [ 8.5%]  hijack:   6.3% [ 1.3%]   clean FPR  3.5%
+  casa_chunk_ragcv   targeted:  48.5% [ 5.8%]  chunkaware:  54.0% [ 7.1%]  hijack:   4.2% [ 2.2%]   clean FPR  1.3%
+[dense] done in 342s
+DONE

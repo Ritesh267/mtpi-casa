@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "strategy": "none",
+      "kept": 237,
+      "mean_turns": 4.9957805907173,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.569620253164557,
+      "CASA-AT (linear)": 0.5485232067510548,
+      "CASA-AT (gbm)": 0.540084388185654
+    },
+    {
+      "strategy": "split",
+      "kept": 237,
+      "mean_turns": 15.063291139240507,
+      "stateless": 0.5738396624472574,
+      "CASA-base": 0.19831223628691982,
+      "CASA-AT (linear)": 0.45147679324894513,
+      "CASA-AT (gbm)": 0.4345991561181435
+    },
+    {
+      "strategy": "pace",
+      "kept": 237,
+      "mean_turns": 10.725738396624472,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.08438818565400844,
+      "CASA-AT (linear)": 0.3670886075949367,
+      "CASA-AT (gbm)": 0.4978902953586498
+    },
+    {
+      "strategy": "pace-wide",
+      "kept": 237,
+      "mean_turns": 16.455696202531644,
+      "stateless": 0.4810126582278481,
+      "CASA-base": 0.07172995780590717,
+      "CASA-AT (linear)": 0.24050632911392406,
+      "CASA-AT (gbm)": 0.47257383966244726
+    },
+    {
+      "strategy": "dilute",
+      "kept": 237,
+      "mean_turns": 4.9957805907173,
+      "stateless": 0.016877637130801686,
+      "CASA-base": 0.02531645569620253,
+      "CASA-AT (linear)": 0.008438818565400843,
+      "CASA-AT (gbm)": 0.029535864978902954
+    },
+    {
+      "strategy": "launder",
+      "kept": 237,
+      "mean_turns": 4.9957805907173,
+      "stateless": 0.47257383966244726,
+      "CASA-base": 0.5443037974683544,
+      "CASA-AT (linear)": 0.510548523206751,
+      "CASA-AT (gbm)": 0.5864978902953587
+    },
+    {
+      "strategy": "combined",
+      "kept": 237,
+      "mean_turns": 40.92827004219409,
+      "stateless": 0.08860759493670886,
+      "CASA-base": 0.0,
+      "CASA-AT (linear)": 0.004219409282700422,
+      "CASA-AT (gbm)": 0.08438818565400844
+    }
+  ],
+  "fpr": {
+    "stateless": 0.044642857142857144,
+    "CASA-base": 0.04017857142857143,
+    "CASA-AT (linear)": 0.049107142857142856,
+    "CASA-AT (gbm)": 0.049107142857142856
+  },
+  "thresholds": {
+    "CASA-AT (linear)": 0.987154203459605,
+    "CASA-AT (gbm)": 0.999783082236708
+  }
+}

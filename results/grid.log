@@ -1,0 +1,50 @@
+turns  train 7035  val 2429  test 2292
+
+training the from-scratch transformer encoder (R5) ...
+  epoch 1/6  loss 0.6774  train acc 0.5947  (162s)
+  epoch 2/6  loss 0.5592  train acc 0.7292  (319s)
+  epoch 3/6  loss 0.5132  train acc 0.7582  (472s)
+  epoch 4/6  loss 0.4854  train acc 0.7778  (630s)
+  epoch 5/6  loss 0.4589  train acc 0.8011  (783s)
+  epoch 6/6  loss 0.4456  train acc 0.8105  (936s)
+encoder done in 938s
+
+R1 tfidf-word  dim=43784  (2s)
+   LogisticRegression   AUC 0.8719  AP 0.7983  recall 0.908  FPR 0.372  F1 0.736  (1s)
+   LinearSVM            AUC 0.8708  AP 0.7975  recall 0.912  FPR 0.382  F1 0.733  (0s)
+
+R2 tfidf-char  dim=72090  (10s)
+   LogisticRegression   AUC 0.8765  AP 0.8075  recall 0.908  FPR 0.360  F1 0.742  (1s)
+   LinearSVM            AUC 0.8771  AP 0.8103  recall 0.910  FPR 0.368  F1 0.739  (1s)
+
+R3 lsa-256  dim=256  (54s)
+   LogisticRegression   AUC 0.8693  AP 0.7972  recall 0.920  FPR 0.385  F1 0.737  (0s)
+   LinearSVM            AUC 0.8687  AP 0.7959  recall 0.918  FPR 0.390  F1 0.733  (1s)
+   RandomForest         AUC 0.8586  AP 0.7704  recall 0.933  FPR 0.401  F1 0.736  (12s)
+   GradientBoosting     AUC 0.8696  AP 0.7948  recall 0.918  FPR 0.366  F1 0.744  (6s)
+   MLP                  AUC 0.8653  AP 0.7906  recall 0.909  FPR 0.395  F1 0.727  (2s)
+
+R4 engineered  dim=24  (4s)
+   LogisticRegression   AUC 0.6803  AP 0.5853  recall 0.928  FPR 0.751  F1 0.607  (0s)
+   LinearSVM            AUC 0.6798  AP 0.5849  recall 0.948  FPR 0.791  F1 0.604  (0s)
+   RandomForest         AUC 0.7724  AP 0.6734  recall 0.905  FPR 0.549  F1 0.663  (2s)
+   GradientBoosting     AUC 0.7682  AP 0.6650  recall 0.909  FPR 0.546  F1 0.666  (1s)
+   MLP                  AUC 0.7424  AP 0.6412  recall 0.927  FPR 0.617  F1 0.650  (1s)
+
+R5 transformer  dim=192  (50s)
+   LogisticRegression   AUC 0.8299  AP 0.7379  recall 0.906  FPR 0.442  F1 0.705  (3s)
+   LinearSVM            AUC 0.8293  AP 0.7377  recall 0.910  FPR 0.445  F1 0.706  (1s)
+   RandomForest         AUC 0.8298  AP 0.7404  recall 0.914  FPR 0.461  F1 0.701  (10s)
+   GradientBoosting     AUC 0.8275  AP 0.7351  recall 0.920  FPR 0.498  F1 0.690  (3s)
+   MLP                  AUC 0.8259  AP 0.7367  recall 0.897  FPR 0.449  F1 0.698  (1s)
+
+R6 hybrid  dim=216  (54s)
+   LogisticRegression   AUC 0.8315  AP 0.7402  recall 0.900  FPR 0.427  F1 0.708  (8s)
+   LinearSVM            AUC 0.8320  AP 0.7408  recall 0.903  FPR 0.432  F1 0.708  (2s)
+   RandomForest         AUC 0.8326  AP 0.7478  recall 0.904  FPR 0.453  F1 0.700  (9s)
+   GradientBoosting     AUC 0.8464  AP 0.7611  recall 0.920  FPR 0.427  F1 0.718  (4s)
+   MLP                  AUC 0.8321  AP 0.7471  recall 0.901  FPR 0.447  F1 0.700  (1s)
+
+   TransformerHead      AUC 0.8262  recall 0.905  FPR 0.462
+
+best turn-level detector: R2 tfidf-char + LinearSVM  AUC 0.8771  recall 0.910 at FPR 0.368
